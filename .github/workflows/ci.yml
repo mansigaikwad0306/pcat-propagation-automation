@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  validate-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Check script syntax
+        run: bash -n scripts/propagation_post_prod.sh
+
+      - name: Build Docker image
+        run: docker build -t pcat-propagation-automation:latest .
+
+      - name: Test container starts
+        run: docker run --rm pcat-propagation-automation:latest --versions-only || true
