@@ -1,6 +1,6 @@
 # PCAT Post-Propagation Automation Platform
 
-[![CI](https://github.com/YOUR-USERNAME/pcat-propagation-automation/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR-USERNAME/pcat-propagation-automation/actions)
+[![CI](https://github.com/mansigaikwad0306/pcat-propagation-automation/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR-USERNAME/pcat-propagation-automation/actions)
 
 Automated post-propagation validation for telecom billing (Amdocs Comverse PCAT) — covering **21 production servers** (TSP, SAPI, OMSAPI) in one run.
 
@@ -123,8 +123,3 @@ On every push to `main`:
 ## Author
 
 **Mansi Gaikwad**  
-DevOps / PCAT Billing Automation
-
-## License
-
-MIT
